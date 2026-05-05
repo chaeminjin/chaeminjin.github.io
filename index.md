@@ -1,15 +1,43 @@
-# MadeUpName
-## PhD Student, MadeUpPlace
-
-email: __madeUpName@madeUpDomain.edu__
-
-## Research
-
-+ [This is a paper hosted locally](papers/paper1.pdf)
-+ This can also be an arxiv link or a link to a journal website
-  * Syntax is [ square brackets for text ] (parentheses for file or location it points to)
-
-
 ---
-[Template repository](https://github.com/apoorvalal/minimal_website);
-Made with righteous fury by [Apoorva Lal](https://apoorvalal.github.io/)
+title: Minjin Chae
+---
+
+::: {.headshotDiv}
+![Headshot](headshot.jpg){.headshot}
+:::
+
+# Minjin Chae
+
+PhD Candidate, Harvard University Department of Sociology
+
+email: **minjinchae@g.harvard.edu**
+
+I am a PhD candidate in the Department of Sociology at Harvard University.
+[One- to three-sentence research statement here — what you study, the questions
+that motivate your work, and the methods or data you use.]
+
+Here's [my CV](Chae_CV.pdf).
+
+## Publications
+
+<ul class="publications">
+  <li> [Paper Title]([link]).
+    <i>[Journal Name]</i>, [Year].
+    <div class="award">
+      <a href="[preprint-url]">Preprint</a>
+      <a href="[code-data-url]">Code + data</a>
+    </div>
+  </li>
+</ul>
+
+## Works in progress
+
+<ul class="publications">
+  <li> [Working paper title]. [Status — e.g., Under review at <em>Journal</em>].</li>
+  <li> [Working paper title]. In progress.</li>
+</ul>
+
+## Other links
+
+- [GitHub](https://github.com/chaeminjin)
+- [Google Scholar]([scholar-url])
