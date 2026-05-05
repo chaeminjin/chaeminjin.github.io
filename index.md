@@ -3,7 +3,7 @@ title: Minjin Chae
 ---
 
 ::: {.headshotDiv}
-![Headshot](headshot.jpg){.headshot}
+![Headshot](profile_large.jpg){.headshot}
 :::
 
 # Minjin Chae
