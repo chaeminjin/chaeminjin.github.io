@@ -8,11 +8,11 @@
 % Page layout with left margin reserved for section labels
 \usepackage[
   letterpaper,
-  textwidth=4.7in,
+  textwidth=5.8in,
   textheight=8.8in,
-  marginparwidth=1.4in,
+  marginparwidth=1.2in,
   marginparsep=0.2in,
-  left=2.05in,
+  left=1.9in,
   top=0.9in,
 ]{geometry}
 \reversemarginpar
@@ -33,7 +33,10 @@
 
 \newcommand{\cvsection}[1]{%
   \par\addvspace{1.2em}%
-  \noindent\marginpar{\strut\RaggedRight\textcolor{labelgray}{\small #1}}\ignorespaces%
+  \noindent\marginpar{%
+    \hyphenpenalty=10000\exhyphenpenalty=10000%
+    \strut\RaggedRight\textcolor{labelgray}{\small #1}%
+  }\ignorespaces%
 }
 
 \setlist{leftmargin=1.5em, topsep=2pt, partopsep=0pt, itemsep=2pt, parsep=0pt}
@@ -42,7 +45,7 @@
 
 \begin{document}
 
-\noindent{\huge Minjin Chae}\par
+\noindent\hspace*{-1.4in}{\huge Minjin Chae}\par
 \bigskip
 
 \cvsection{Contact information}
@@ -175,22 +178,13 @@ Member, American Sociological Association, 2021--present
 Member, Work Family Researchers Network, 2022--present
 
 \cvsection{References}
-\noindent\begin{minipage}[t]{0.48\linewidth}
-David Pedulla\\
-Department of Sociology\\
-Harvard University
-\end{minipage}\hfill\begin{minipage}[t]{0.48\linewidth}
-Daniel Schneider\\
-Department of Sociology\\
-Harvard University
-\end{minipage}
-
-\medskip
-
-\noindent\begin{minipage}[t]{0.48\linewidth}
-Alexandra Killewald\\
-Department of Sociology\\
-University of Michigan
-\end{minipage}
+\begin{tabular}{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}
+David Pedulla & Daniel Schneider \\
+Department of Sociology & Department of Sociology \\
+Harvard University & Harvard University \\[1em]
+Alexandra Killewald & \\
+Department of Sociology & \\
+University of Michigan & \\
+\end{tabular}
 
 \end{document}
