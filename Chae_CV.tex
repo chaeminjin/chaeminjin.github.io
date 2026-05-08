@@ -1,7 +1,8 @@
 \documentclass[11pt,letterpaper]{article}
 
-% Classic academic font: Palatino with old-style figures
-\usepackage[osf]{mathpazo}
+% Match website font: PT Serif
+\usepackage[T1]{fontenc}
+\usepackage{PTSerif}
 \usepackage{microtype}
 
 % Page layout with left margin reserved for section labels
@@ -31,13 +32,13 @@
 \fancyfoot[R]{\small\itshape Curriculum Vitae, Minjin Chae, \thepage}
 
 \newcommand{\cvsection}[1]{%
-  \par\bigskip
-  \marginpar{\RaggedRight\textcolor{labelgray}{\small #1}}%
+  \par\addvspace{1.2em}%
+  \noindent\marginpar{\strut\RaggedRight\textcolor{labelgray}{\small #1}}\ignorespaces%
 }
 
 \setlist{leftmargin=1.5em, topsep=2pt, partopsep=0pt, itemsep=2pt, parsep=0pt}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0.4em}
+\setlength{\parskip}{0.5em}
 
 \begin{document}
 
