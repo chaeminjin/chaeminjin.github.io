@@ -4,7 +4,7 @@ title: Minjin Chae
 ---
 
 <div class="headshotDiv">
-  <img src="profile_large.png" alt="Headshot" class="headshot">
+  <img src="profile_small.jpg" alt="Headshot" class="headshot">
 </div>
 
 # Minjin Chae
