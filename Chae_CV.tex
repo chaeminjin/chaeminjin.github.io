@@ -33,9 +33,12 @@
 
 \newcommand{\cvsection}[1]{%
   \par\addvspace{1.2em}%
-  \noindent\marginpar{%
-    \hyphenpenalty=10000\exhyphenpenalty=10000%
-    \strut\RaggedRight\textcolor{labelgray}{\small #1}%
+  \noindent\llap{%
+    \parbox[t]{1.2in}{%
+      \hyphenpenalty=10000\exhyphenpenalty=10000%
+      \RaggedRight\textcolor{labelgray}{\small\strut #1}%
+    }%
+    \hspace{0.2in}%
   }\ignorespaces%
 }
 
@@ -120,21 +123,25 @@ Chae, Minjin. ``Gender Essentialist Norms and Skeptical Attitudes Toward Marriag
 \end{itemize}
 
 \cvsection{Grants \& awards}
+Graduate Seed Grant (\$1{,}000), Harvard University Center for American Political Studies, 2026
+
+Summer Research Grant (\$1{,}000), Harvard Griffin GSAS Student Council (GSC), 2026
+
+Travel Grant, Harvard Center for Population and Development Studies, 2024--2026
+
+Travel Grant, Harvard University Department of Sociology, 2022--2026
+
 Krupp Foundation Dissertation Research Fellowship (\$19{,}000), Minda de Gunzburg Center for European Studies, Harvard University, 2025
 
 Merit/Graduate Society Term-Time Research Fellowship (\$21{,}000), Harvard University Graduate School of Arts and Sciences, 2025
 
 Jens Aubrey Westengard Fund (\$800), Harvard University Graduate School of Arts and Sciences, 2025
 
-Travel Grant, Harvard University Institute for Quantitative Social Science, 2024, 2025
-
-Travel Grant, Harvard Center for Population and Development Studies, 2024, 2025
-
-Travel Grant, Harvard University Department of Sociology, 2022--2025
-
 Dissertation Research Grant (\$3{,}000), Harvard Center for Population and Development Studies, 2024
 
 Research Grant (\$2{,}700), Harvard University Institute for Quantitative Social Science, 2024
+
+Travel Grant, Harvard University Institute for Quantitative Social Science, 2024, 2025
 
 Graduate Seed Grant (\$750), Harvard University Center for American Political Studies, 2023
 
@@ -150,7 +157,7 @@ Best Graduate Student Paper Award, The Population Association of Korea, 2019
 
 Lecture and Research Scholarship, Seoul National University Department of Sociology, 2018
 
-2nd Prize, Youth Paper Competition, Institute for Peace and Unification Studies, 2017
+2nd Prize, Student Paper Competition, Institute for Peace and Unification Studies, 2017
 
 Naum Scholarship, Seoul National University Department of Sociology, 2017
 
@@ -158,9 +165,9 @@ SNU Undergraduate Research Program Grant, Seoul National University, 2016
 
 Study Abroad Program Grant, Seoul National University Office of International Affairs, 2016
 
-Merit-Based Scholarship, Seoul National University, 2013--2015
-
 Grand Prize, Undergraduate Student Paper Competition, The Korean Society for Chinese Studies, 2014
+
+Merit-Based Scholarship, Seoul National University, 2013--2015
 
 SNU Development Fund Scholarship, Seoul National University, 2013
 
@@ -176,13 +183,15 @@ Member, American Sociological Association, 2021--present
 Member, Work Family Researchers Network, 2022--present
 
 \cvsection{References}
-\begin{tabular}{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}
+\begin{tabular}[t]{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}
 David Pedulla & Daniel Schneider \\
 Department of Sociology & Department of Sociology \\
-Harvard University & Harvard University \\[1em]
+Harvard University & Harvard University \\
+\href{mailto:dpedulla@fas.harvard.edu}{dpedulla@fas.harvard.edu} & \href{mailto:dschneider@hks.harvard.edu}{dschneider@hks.harvard.edu} \\[1em]
 Alexandra Killewald & \\
 Department of Sociology & \\
 University of Michigan & \\
+\href{mailto:akillewa@umich.edu}{akillewa@umich.edu} & \\
 \end{tabular}
 
 \end{document}
