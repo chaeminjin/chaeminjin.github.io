@@ -1,10 +1,11 @@
 ---
+layout: default
 title: Minjin Chae
 ---
 
-::: {.headshotDiv}
-![Headshot](profile_large.jpg){.headshot}
-:::
+<div class="headshotDiv">
+  <img src="profile_large.png" alt="Headshot" class="headshot">
+</div>
 
 # Minjin Chae
 
@@ -21,11 +22,11 @@ Here's [my CV](Chae_CV.pdf).
 ## Publications
 
 <ul class="publications">
-  <li> [Paper Title]([link]).
+  <li>[Paper Title](#).
     <i>[Journal Name]</i>, [Year].
     <div class="award">
-      <a href="[preprint-url]">Preprint</a>
-      <a href="[code-data-url]">Code + data</a>
+      <a href="#">Preprint</a>
+      <a href="#">Code + data</a>
     </div>
   </li>
 </ul>
@@ -33,11 +34,11 @@ Here's [my CV](Chae_CV.pdf).
 ## Works in progress
 
 <ul class="publications">
-  <li> [Working paper title]. [Status — e.g., Under review at <em>Journal</em>].</li>
-  <li> [Working paper title]. In progress.</li>
+  <li>[Working paper title]. [Status — e.g., Under review at <em>Journal</em>].</li>
+  <li>[Working paper title]. In progress.</li>
 </ul>
 
 ## Other links
 
 - [GitHub](https://github.com/chaeminjin)
-- [Google Scholar]([scholar-url])
+- [Google Scholar](#)
