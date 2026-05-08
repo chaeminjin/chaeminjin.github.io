@@ -26,15 +26,15 @@ Here's [my CV](Chae_CV.pdf).
 ## Working papers
 
 <ul class="publications">
-  <li>Chae, Minjin. "Occupational Sorting and Remote Work Inequality, 2017&ndash;2026."</li>
-  <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Labor Expectations."</li>
-  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults." Revise &amp; resubmit at <i>Korea Journal of Population Studies</i>.</li>
+  <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Labor Expectations." Under review.</li>
+  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults."</li>
 </ul>
 
 ## Work in progress
 
 <ul class="publications">
-  <li>Chae, Minjin. "The Organizational Mediation of Work-Care Shocks: Firm-Level Configurations and Gender Inequality in Germany."</li>
+  <li>Chae, Minjin. "Occupational Sorting and Remote Work Inequality, 2017&ndash;2026."</li>
+  <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home Expansion and KiF&ouml;G Childcare Expansion."</li>
 </ul>
 
 ## Other links
