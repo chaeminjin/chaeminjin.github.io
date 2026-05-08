@@ -25,16 +25,14 @@ h4 { font-size: 105%; }
 h5 { font-size: 100%; }
 
 .headshotDiv {
-    width: 5cm;
-    height: 5cm;
     float: right;
-    padding-left: 1em;
+    margin: 0 0 1em 1.5em;
 }
 
 .headshot {
-    width: 90%;
+    width: 200px;
     height: auto;
-    float: right;
+    border-radius: 4px;
 }
 
 .publications {
