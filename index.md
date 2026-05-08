@@ -27,7 +27,6 @@ Here's [my CV](Chae_CV.pdf).
 
 <ul class="publications">
   <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Labor Expectations." Under review.</li>
-  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults." Under review.</li>
 </ul>
 
 ## Work in progress
@@ -35,5 +34,6 @@ Here's [my CV](Chae_CV.pdf).
 <ul class="publications">
   <li>Chae, Minjin. "Occupational Sorting and Remote Work Inequality, 2017&ndash;2026."</li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home Expansion and KiF&ouml;G Childcare Expansion."</li>
+  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults."</li>
 </ul>
 
