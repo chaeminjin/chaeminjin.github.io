@@ -35,6 +35,18 @@ h5 { font-size: 100%; }
     border-radius: 4px;
 }
 
+@media (max-width: 600px) {
+    .headshotDiv {
+        float: none;
+        margin: 0 auto 1em auto;
+        text-align: center;
+    }
+    .headshot {
+        width: 60%;
+        max-width: 200px;
+    }
+}
+
 .publications {
     list-style-type: square;
     margin: 0;
