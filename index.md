@@ -32,7 +32,7 @@ Here's [my CV](Chae_CV.pdf).
 ## Work in progress
 
 <ul class="publications">
-  <li>Chae, Minjin. "Occupational Sorting and Remote Work Inequality, 2017&ndash;2026."</li>
+  <li>Chae, Minjin. "Occupational Segregation and the Structure of Intersectional Inequality in Remote Work, 2017&ndash;2026."</li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home Expansion and KiF&ouml;G Childcare Expansion."</li>
   <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "Why Is the Gender Wage Gap Larger in Some Occupations than Others? Work Hours, Task Flexibility, and the Gender Wage Gap Across Occupations."</li>
   <li>Chae, Minjin. "Who Gets Better Schedules? Worker Power, Productivity Constraints, and Temporal Job Quality."</li>
