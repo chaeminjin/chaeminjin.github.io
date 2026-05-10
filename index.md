@@ -9,7 +9,7 @@ title: Minjin Chae
 
 # Minjin Chae
 
-PhD Candidate, Harvard University Department of Sociology
+PhD Candidate, Harvard University, Department of Sociology
 
 email: **minjinchae@g.harvard.edu**
 
