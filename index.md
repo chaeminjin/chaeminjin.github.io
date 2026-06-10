@@ -35,7 +35,6 @@ Here's [my CV](Chae_CV.pdf).
   <li>Chae, Minjin. "Occupational Segregation and the Structure of Intersectional Inequality in Remote Work, 2017&ndash;2026."</li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions."</li>
   <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "Why Is the Gender Wage Gap Larger in Some Occupations than Others? Work Hours, Task Flexibility, and the Gender Wage Gap Across Occupations."</li>
-  <li>Chae, Minjin. "Who Gets Better Schedules? Worker Power, Productivity Constraints, and Temporal Job Quality."</li>
   <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults."
     <ul class="award">
       <li>International Conference on Sociology of Korea Student Paper Award, University of Pennsylvania Kim Center for Korean Studies, 2022</li>
