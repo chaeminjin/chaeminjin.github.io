@@ -22,7 +22,7 @@ Here's [my CV](Chae_CV.pdf).
 <ul class="publications">
   <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment." Under review.
     <ul class="award">
-      <li>Nominated, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026</li>
+      <li>Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026</li>
     </ul>
   </li>
 </ul>
@@ -33,7 +33,7 @@ Here's [my CV](Chae_CV.pdf).
   <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work."</li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions."
     <ul class="award">
-      <li>Guest Researcher in residence, WZB Berlin Social Science Center, hosted by Lena Hipp, Spring 2026</li>
+      <li>Guest Researcher in residence, WZB Berlin Social Science Center, Spring 2026</li>
     </ul>
   </li>
   <li>Chae, Minjin. "Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control."</li>
@@ -47,7 +47,7 @@ Here's [my CV](Chae_CV.pdf).
   </li>
 </ul>
 
-## Other publications
+## Publications
 
 <ul class="publications">
   <li>Yun, Youngho, Yeani Choi, and Minjin Chae. 2021. "Development and Validity Testing of the Workplace Parentship Index (WPI): Assessment of Family-Friendly Practices." <i>Journal of Occupational and Environmental Medicine</i> 63(12).</li>
