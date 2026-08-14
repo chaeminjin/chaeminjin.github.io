@@ -17,6 +17,12 @@ I study how individual decisions and behaviors regarding work and family, often 
 
 Here's [my CV](Chae_CV.pdf).
 
+## Publications
+
+<ul class="publications">
+  <li>Yun, Youngho, Yeani Choi, and Minjin Chae. 2021. "Development and Validity Testing of the Workplace Parentship Index (WPI): Assessment of Family-Friendly Practices." <i>Journal of Occupational and Environmental Medicine</i> 63(12).</li>
+</ul>
+
 ## Working papers
 
 <ul class="publications">
@@ -37,7 +43,7 @@ Here's [my CV](Chae_CV.pdf).
     </ul>
   </li>
   <li>Chae, Minjin. "Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control."</li>
-  <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "Why Is the Gender Wage Gap Larger in Some Occupations than Others? Work Hours, Task Flexibility, and the Gender Wage Gap Across Occupations."</li>
+  <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations."</li>
   <li>Chae, Minjin. "Who Works From Home Within the Same Job? Racial Inequality in Remote Work and the Role of Collective Bargaining."</li>
   <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults."
     <ul class="award">
@@ -45,11 +51,5 @@ Here's [my CV](Chae_CV.pdf).
       <li>Best Graduate Student Paper Award, The Population Association of Korea, 2019</li>
     </ul>
   </li>
-</ul>
-
-## Publications
-
-<ul class="publications">
-  <li>Yun, Youngho, Yeani Choi, and Minjin Chae. 2021. "Development and Validity Testing of the Workplace Parentship Index (WPI): Assessment of Family-Friendly Practices." <i>Journal of Occupational and Environmental Medicine</i> 63(12).</li>
 </ul>
 
