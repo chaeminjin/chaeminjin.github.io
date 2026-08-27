@@ -13,7 +13,7 @@ PhD Candidate, Harvard University, Department of Sociology
 
 email: **minjinchae@g.harvard.edu**
 
-I study how individual decisions and behaviors regarding work and family, often perceived as voluntary and rational, are in fact deeply embedded in social structures and norms. My projects ask whether workplace flexibility shifts gendered domestic expectations, how occupational segregation produces gender and racial inequality in remote work, and how organizational configurations mediate the effects of flexibility and childcare policies. I use quantitative methods with administrative, survey, and experimental data from the United States, Germany, and South Korea.
+I study who gains control over where and when work occurs, and who benefits when work becomes flexible. The technical conditions of work, such as tasks and technologies, tell only part of the story. My research shows that social structures, including gender norms, racial task segregation, and worker power, are equally consequential. These structures explain why new forms of work keep reproducing old inequalities of gender, race, and class. My current projects ask whether workplace flexibility shifts gendered domestic expectations, how racial task segregation determines who can work from home, why schedule control operates as a temporal rent, and when expanded flexibility advances female employees' careers. To answer these questions, I draw on experimental, survey, and administrative data from the United States, Germany, and South Korea.
 
 Here's [my CV](Chae_CV.pdf).
 
