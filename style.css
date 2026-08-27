@@ -24,30 +24,46 @@ h3 { font-size: 110%; }
 h4 { font-size: 105%; }
 h5 { font-size: 100%; }
 
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    margin-bottom: 1.2em;
+}
+
+.headerText {
+    flex: 1;
+    min-width: 0;
+}
+
+.headerText h1 {
+    margin-top: 0;
+}
+
+.headerText p:last-child {
+    margin-bottom: 0;
+}
+
 .headshotDiv {
-    float: right;
-    margin: 0 0 1em 1.5em;
+    flex: none;
 }
 
 .headshot {
     width: 130px;
     height: auto;
     border-radius: 4px;
-}
-
-.clearfloat {
-    clear: both;
+    display: block;
 }
 
 @media (max-width: 600px) {
-    .headshotDiv {
-        float: none;
-        margin: 0 auto 1em auto;
-        text-align: center;
+    .header {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 1em;
     }
     .headshot {
-        width: 60%;
-        max-width: 200px;
+        width: 45vw;
+        max-width: 180px;
     }
 }
 

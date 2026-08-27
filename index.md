@@ -3,17 +3,16 @@ layout: default
 title: Minjin Chae
 ---
 
-<div class="headshotDiv">
-  <img src="profile_small.jpg" alt="Headshot" class="headshot">
+<div class="header">
+  <div class="headerText">
+    <h1>Minjin Chae</h1>
+    <p>PhD Candidate, Harvard University, Department of Sociology</p>
+    <p>email: <strong>minjinchae@g.harvard.edu</strong></p>
+  </div>
+  <div class="headshotDiv">
+    <img src="profile_small.jpg" alt="Headshot" class="headshot">
+  </div>
 </div>
-
-# Minjin Chae
-
-PhD Candidate, Harvard University, Department of Sociology
-
-email: **minjinchae@g.harvard.edu**
-
-<div class="clearfloat"></div>
 
 I study who gains control over where and when work occurs, and who benefits when work becomes flexible. The technical conditions of work, such as tasks and technologies, tell only part of the story. My research shows that social structures, including gender norms, racial task segregation, and worker power, are equally consequential. These structures explain why new forms of work keep reproducing old inequalities of gender, race, and class. My current projects ask whether workplace flexibility shifts gendered domestic expectations, how racial task segregation determines who can work from home, why schedule control operates as a temporal rent, and when expanded flexibility advances female employees' careers. To answer these questions, I draw on experimental, survey, and administrative data from the United States, Germany, and South Korea.
 
