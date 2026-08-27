@@ -30,9 +30,13 @@ h5 { font-size: 100%; }
 }
 
 .headshot {
-    width: 200px;
+    width: 130px;
     height: auto;
     border-radius: 4px;
+}
+
+.clearfloat {
+    clear: both;
 }
 
 @media (max-width: 600px) {
