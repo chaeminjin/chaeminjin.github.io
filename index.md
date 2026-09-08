@@ -36,9 +36,9 @@ Here's [my CV](Chae_CV.pdf).
 ## Work in progress
 
 <ul class="publications">
-  <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work." <span class="status">Draft available upon request</span></li>
   <li>Chae, Minjin. "<a href="papers/Chae_Schedule_Control.pdf">Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control</a>."</li>
   <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations." <span class="status">Draft available upon request</span></li>
+  <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work." <span class="status">Draft available upon request</span></li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions." <span class="status">Data analysis</span>
     <ul class="award">
       <li>Guest Researcher in residence, WZB Berlin Social Science Center, Spring 2026</li>
