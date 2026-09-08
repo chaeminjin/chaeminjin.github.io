@@ -26,7 +26,7 @@ Here's [my CV](Chae_CV.pdf).
 ## Working papers
 
 <ul class="publications">
-  <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment." Under review.
+  <li>Chae, Minjin. "<a href="papers/Chae_JMP.pdf">When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment</a>." Under review.
     <ul class="award">
       <li>Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026</li>
     </ul>
@@ -36,16 +36,16 @@ Here's [my CV](Chae_CV.pdf).
 ## Work in progress
 
 <ul class="publications">
-  <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work."</li>
-  <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions."
+  <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work." <span class="status">Draft available upon request</span></li>
+  <li>Chae, Minjin. "<a href="papers/Chae_Schedule_Control.pdf">Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control</a>."</li>
+  <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations." <span class="status">Draft available upon request</span></li>
+  <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions." <span class="status">Data analysis</span>
     <ul class="award">
       <li>Guest Researcher in residence, WZB Berlin Social Science Center, Spring 2026</li>
     </ul>
   </li>
-  <li>Chae, Minjin. "Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control."</li>
-  <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations."</li>
-  <li>Chae, Minjin. "Who Works From Home Within the Same Job? Racial Inequality in Remote Work and the Role of Collective Bargaining."</li>
-  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults."
+  <li>Chae, Minjin. "Who Works From Home Within the Same Job? Racial Inequality in Remote Work and the Role of Collective Bargaining." <span class="status">Data analysis</span></li>
+  <li>Chae, Minjin. "Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults." <span class="status">Draft available upon request</span>
     <ul class="award">
       <li>International Conference on Sociology of Korea Student Paper Award, University of Pennsylvania Kim Center for Korean Studies, 2022</li>
       <li>Best Graduate Student Paper Award, The Population Association of Korea, 2019</li>

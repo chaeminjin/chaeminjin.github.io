@@ -3,61 +3,109 @@
 % Match website font: PT Serif
 \usepackage[T1]{fontenc}
 \usepackage{PTSerif}
-\usepackage{microtype}
+\usepackage[letterspace=120]{microtype}
 
-% Page layout with left margin reserved for section labels
+% Full-width layout: section headers sit above their content
 \usepackage[
   letterpaper,
-  textwidth=5.8in,
-  textheight=8.8in,
-  marginparwidth=1.2in,
-  marginparsep=0.2in,
-  left=1.9in,
-  top=0.9in,
+  left=0.8in,
+  right=0.8in,
+  top=0.95in,
+  bottom=1.0in,
 ]{geometry}
-\reversemarginpar
 
 \usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{ragged2e}
-\usepackage{needspace}
+% Keep a header (or an entry title) from being stranded at the foot of a page.
+% Hand-rolled instead of \needspace, whose \vfil ejects half-empty pages here.
+\newdimen\cvroom
+\newcommand{\cvneed}[1]{%
+  \par
+  \ifdim\pagegoal=\maxdimen\else
+    \cvroom=\dimexpr\pagegoal-\pagetotal\relax
+    \ifdim\cvroom<#1\relax\newpage\fi
+  \fi}
 
-\definecolor{labelgray}{gray}{0.45}
-\hypersetup{colorlinks=true, urlcolor=blue, linkcolor=blue}
+\definecolor{labelgray}{gray}{0.42}
+\definecolor{rulegray}{gray}{0.72}
+\definecolor{linkblue}{HTML}{1A4B8C}
+\hypersetup{colorlinks=true, urlcolor=linkblue, linkcolor=linkblue}
 
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \fancyfoot[R]{\small\itshape Curriculum Vitae, Minjin Chae, \thepage}
 
+% ---- Section header: full-width, above the content ----
 \newcommand{\cvsection}[1]{%
-  \par\addvspace{0.8em}%
-  \noindent\llap{%
-    \smash{\parbox[t]{1.2in}{%
-      \hyphenpenalty=10000\exhyphenpenalty=10000%
-      \RaggedRight\textcolor{labelgray}{\small\strut #1}%
-    }}%
-    \hspace{0.2in}%
-  }\ignorespaces%
-}
+  \par\addvspace{1.15em}%
+  \cvneed{4\baselineskip}%
+  \noindent{\small\bfseries\textls{\MakeUppercase{#1}}}\par
+  \vspace{0.25em}%
+  {\color{rulegray}\hrule height 0.5pt}%
+  \vspace{0.55em}%
+  \nobreak\ignorespaces}
+
+% ---- Subline: indented, italic, gray (awards attached to an entry) ----
+% NOTE: \RaggedRight must come BEFORE \leftskip -- ragged2e resets \leftskip to 0.
+% One paragraph with \interlinepenalty=10000, so a multi-line subline can never
+% be split across a page; \nobreak keeps it with the entry it belongs to.
+% Separate multiple sublines with \\ (not a blank line).
+% ---- Status: inline tag at the end of an entry, not on a line of its own ----
+\newcommand{\status}[1]{\hspace{0.5em}{\small\itshape\color{labelgray}#1}}
+
+\newcommand{\subline}[1]{%
+  \par\nobreak\vspace{0.15em}%
+  \begingroup
+  \small\itshape
+  \RaggedRight
+  \interlinepenalty=10000
+  \setlength{\parindent}{0pt}%
+  % \leavevmode BEFORE \color: a \color whatsit in vertical mode would make the
+  % following \parskip glue a legal page break, detaching this from its entry.
+  \leavevmode\color{labelgray}%
+  #1\par
+  \endgroup
+  \vspace{0.3em}}
+
+% ---- Sublines: indented block of plain lines (venues, courses) ----
+\newenvironment{sublines}{%
+  \par\nobreak
+  \begingroup
+  \small
+  \RaggedRight
+  \leftskip=1.6em
+  \setlength{\parskip}{0.32em}\setlength{\parindent}{0pt}%
+}{\par\endgroup\vspace{0.2em}}
+
+% ---- Entry: a titled block (paper, presentation topic) ----
+\newcommand{\entry}[1]{\par\addvspace{0.85em}\cvneed{3\baselineskip}\noindent #1\par\nobreak}
 
 \setlist{leftmargin=1.5em, topsep=1pt, partopsep=0pt, itemsep=1pt, parsep=0pt}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.45em}
 \setlength{\emergencystretch}{2em}
-\hyphenation{Division Workplace Member}
+\raggedbottom
+\widowpenalty=10000
+\clubpenalty=10000
+
+% True ragged right, no hyphenation (cleaner for short CV lines)
+\setlength{\RaggedRightRightskip}{0pt plus 1fil}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
 
 \begin{document}
+\RaggedRight
 
-\noindent\hspace*{-1.4in}{\huge Minjin Chae}\par
+{\huge Minjin Chae}\par
 \smallskip
-\hspace*{-1.4in}\href{mailto:minjinchae@g.harvard.edu}{minjinchae@g.harvard.edu} \enspace\textbar\enspace \url{https://chaeminjin.github.io/}\par
+\href{mailto:minjinchae@g.harvard.edu}{minjinchae@g.harvard.edu} \enspace\textbar\enspace \url{https://chaeminjin.github.io/}\par
 \medskip
 
 \cvsection{Education}
-{\RaggedRight
 \textbf{Harvard University}\\
 Ph.D. in Sociology, 2027 (expected)\\
 Dissertation: \emph{Flexible Work, Durable Inequality: Gender, Race, and the Remaking of Workplace Advantage}\\
@@ -67,82 +115,79 @@ M.A. in Sociology, 2023
 \smallskip
 \textbf{Seoul National University}\\
 M.A. in Sociology, 2019\\
-B.A. in History Education and B.B.A. in Business, 2017\par}
+B.A. in History Education and B.B.A. in Business, 2017
 
 \cvsection{Research interests}
-future of work, flexible work, social inequality, gender and race
+future of work, flexible work, social inequality, work and family, gender and race
 
 \cvsection{Publications}
 Yun, Youngho, Yeani Choi, and Minjin Chae. 2021. ``Development and Validity Testing of the Workplace Parentship Index (WPI): Assessment of Family-Friendly Practices.'' \emph{Journal of Occupational and Environmental Medicine} 63(12).
 
 \cvsection{Working papers}
 Chae, Minjin. ``When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment.'' Under review.
-\begin{itemize}
-\item Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026
-\end{itemize}
+\subline{Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026}
 
 \cvsection{Work in progress}
-\begingroup\setlength{\parskip}{0.6em}
-Chae, Minjin. ``Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work.''
+Chae, Minjin. ``Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work.''\status{Draft available upon request}
 
-Chae, Minjin. ``When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF\"oG Childcare Expansions.''
-\begin{itemize}
-\item Guest Researcher in residence, WZB Berlin Social Science Center, Spring 2026
-\end{itemize}
+Chae, Minjin. ``Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control.''\status{Draft available upon request}
 
-Chae, Minjin. ``Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control.''
+Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. ``It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations.''\status{Draft available upon request}
 
-Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. ``It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations.''
+Chae, Minjin. ``When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF\"oG Childcare Expansions.''\status{Data analysis}
+\subline{Guest Researcher in residence, WZB Berlin Social Science Center, Spring 2026}
 
-Chae, Minjin. ``Who Works From Home Within the Same Job? Racial Inequality in Remote Work and the Role of Collective Bargaining.''
+Chae, Minjin. ``Who Works From Home Within the Same Job? Racial Inequality in Remote Work and the Role of Collective Bargaining.''\status{Data analysis}
 
-Chae, Minjin. ``Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults.''
-\begin{itemize}
-\item International Conference on Sociology of Korea Student Paper Award, University of Pennsylvania Kim Center for Korean Studies, 2022
-\item Best Graduate Student Paper Award, The Population Association of Korea, 2019
-\end{itemize}
-\endgroup
+Chae, Minjin. ``Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults.''\status{Draft available upon request}
+\subline{International Conference on Sociology of Korea Student Paper Award, University of Pennsylvania Kim Center for Korean Studies, 2022\\
+Best Graduate Student Paper Award, The Population Association of Korea, 2019}
 
 \cvsection{Presentations}
-\textit{Occupational Segregation and Remote Work Inequality by Race and Gender, 2017--2026}
-\begin{itemize}
-\item American Sociological Association Annual Meeting. New York City, US. August 2026.
-\item Research Committee 28 of the International Sociology Association. New York City, US. August 2026.
-\end{itemize}
+\entry{\textit{Occupational Segregation and Remote Work Inequality by Race and Gender, 2017--2026}}
+\begin{sublines}
+American Sociological Association Annual Meeting. New York City, US. August 2026.
 
-\medskip
-\textit{Can Workplace Flexibility Policies Promote Gender Equality at Home?}
-\begin{itemize}
-\item Academy of Management Annual Meeting. Philadelphia, US. August 2026.
-\item Work and Family Researcher Network Conference. Montreal, Canada. June 2026.
-\item Research Committee 28 of the International Sociology Association. Seville, Spain. May 2026.
-\item American Sociological Association Annual Meeting. Chicago, US. August 2025.
-\item International Community, Work and Family Conference. Bielefeld, Germany. March 2025.
-\item Korean Sociological Association Annual Meeting. Seoul, South Korea. December 2024.
-\end{itemize}
+Research Committee 28 of the International Sociology Association. New York City, US. August 2026.
+\end{sublines}
 
-\medskip
-\textit{How Worker Power and Time-related Productivity Constraints Shape Schedule Quality}
-\begin{itemize}
-\item American Sociological Association Annual Meeting. Montreal, Canada. August 2024.
-\item American Sociological Association Annual Meeting. Philadelphia, US. August 2023.
-\item Korea Inequality Research Network Colloquium. Chuncheon, South Korea. July 2023.
-\end{itemize}
+\entry{\textit{Can Workplace Flexibility Policies Promote Gender Equality at Home?}}
+\begin{sublines}
+Academy of Management Annual Meeting. Philadelphia, US. August 2026.
 
-\medskip
-\textit{The Role of Work Hours and Occupation in the Gender Wage Gap}
-\begin{itemize}
-\item Work and Family Researcher Network Conference. Montreal, Canada. June 2024.
-\end{itemize}
+Work and Family Researcher Network Conference. Montreal, Canada. June 2026.
 
-\medskip
-\textit{Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults}
-\begin{itemize}
-\item International Conference on Sociology of Korea. Philadelphia, US. October 2022.
-\item Population Association of Korea Annual Meeting. Daejeon, South Korea. June 2019.
-\end{itemize}
+Research Committee 28 of the International Sociology Association. Seville, Spain. May 2026.
 
-\cvsection{Honors \& Awards}
+American Sociological Association Annual Meeting. Chicago, US. August 2025.
+
+International Community, Work and Family Conference. Bielefeld, Germany. March 2025.
+
+Korean Sociological Association Annual Meeting. Seoul, South Korea. December 2024.
+\end{sublines}
+
+\entry{\textit{How Worker Power and Time-related Productivity Constraints Shape Schedule Quality}}
+\begin{sublines}
+American Sociological Association Annual Meeting. Montreal, Canada. August 2024.
+
+American Sociological Association Annual Meeting. Philadelphia, US. August 2023.
+
+Korea Inequality Research Network Colloquium. Chuncheon, South Korea. July 2023.
+\end{sublines}
+
+\entry{\textit{The Role of Work Hours and Occupation in the Gender Wage Gap}}
+\begin{sublines}
+Work and Family Researcher Network Conference. Montreal, Canada. June 2024.
+\end{sublines}
+
+\entry{\textit{Gender Essentialist Norms and Skeptical Attitudes Toward Marriage Among South Korean Young Adults}}
+\begin{sublines}
+International Conference on Sociology of Korea. Philadelphia, US. October 2022.
+
+Population Association of Korea Annual Meeting. Daejeon, South Korea. June 2019.
+\end{sublines}
+
+\cvsection{Honors \& awards}
 Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026
 
 Doctoral Consortium, Organization and Management Theory Division, Academy of Management, 2026
@@ -157,7 +202,7 @@ Best Graduate Student Paper Award, The Population Association of Korea, 2019
 
 Grand Prize, Undergraduate Student Paper Competition, The Korean Society for Chinese Studies, 2014
 
-\cvsection{Fellowships \& Grants}
+\cvsection{Fellowships \& grants}
 Dissertation Completion Fellowship, Harvard University Graduate School of Arts and Sciences, 2026--2027
 
 Graduate Seed Grant, Harvard University Center for American Political Studies, 2026
@@ -203,19 +248,21 @@ Merit-Based Scholarship, Seoul National University, 2013--2015
 SNU Development Fund Scholarship, Seoul National University, 2013
 
 \cvsection{Teaching}
-\textbf{Teaching Fellow, Harvard University}
-\begin{itemize}
-\item Work and Culture. Fall 2024.
-\item Models of Social Science Research. Spring 2022, 2023.
-\item Introduction to Sociology. Fall 2022, 2023.
-\end{itemize}
+\entry{\textbf{Teaching Fellow, Harvard University}}
+\begin{sublines}
+Work and Culture. Fall 2024.
 
-\needspace{4\baselineskip}
-\textbf{Undergraduate Thesis Advisor, Harvard University}
-\begin{itemize}
-\item Jenna Hong
-\item Mira Nalbandian
-\end{itemize}
+Models of Social Science Research. Spring 2022, 2023.
+
+Introduction to Sociology. Fall 2022, 2023.
+\end{sublines}
+
+\entry{\textbf{Undergraduate Thesis Advisor, Harvard University}}
+\begin{sublines}
+Jenna Hong
+
+Mira Nalbandian
+\end{sublines}
 
 \cvsection{Service}
 Committee on Higher Degrees, Department of Sociology, Harvard University (Member), 2025--2026
@@ -224,7 +271,15 @@ Department Colloquium Committee, Department of Sociology, Harvard University (Me
 
 Graduate Student Organization, Department of Sociology, Harvard University (Social Chair), 2022--2024
 
-American Sociological Association, Academy of Management, Work Family Researchers Network, Research Committee 28 of the International Sociology Association
+Memberships: American Sociological Association, Academy of Management, Work Family Researchers Network, Research Committee 28 of the International Sociology Association
+
+\cvsection{Professional experience}
+\entry{\textbf{Research Associate, Deokinwon Co., Ltd., Seoul, South Korea}, 2020}
+\begin{sublines}
+Developed and validated the Workplace Parentship Index, an instrument assessing employee wellbeing, health, and family-friendly workplace practices.
+
+Fielded employee and HR manager surveys with a client firm and drafted the assessment report.
+\end{sublines}
 
 \cvsection{Technical skills}
 Stata, R, LaTeX, Qualtrics
@@ -233,15 +288,12 @@ Stata, R, LaTeX, Qualtrics
 English (Fluent), Korean (Native), German (Intermediate, B1), Mandarin (Beginner)
 
 \cvsection{References}
-\begin{tabular}[t]{@{}p{0.48\linewidth}p{0.48\linewidth}@{}}
-David Pedulla & Daniel Schneider \\
-Department of Sociology & Department of Sociology \\
-Harvard University & Harvard University \\
-\href{mailto:dpedulla@fas.harvard.edu}{dpedulla@fas.harvard.edu} & \href{mailto:dschneider@hks.harvard.edu}{dschneider@hks.harvard.edu} \\[1em]
-Alexandra Killewald & \\
-Department of Sociology & \\
-University of Michigan & \\
-\href{mailto:akillewa@umich.edu}{akillewa@umich.edu} & \\
-\end{tabular}
+{\small
+\begin{tabular}[t]{@{}p{0.30\linewidth}p{0.30\linewidth}p{0.30\linewidth}@{}}
+David Pedulla & Daniel Schneider & Alexandra Killewald \\
+Department of Sociology & Department of Sociology & Department of Sociology \\
+Harvard University & Harvard University & University of Michigan \\
+\href{mailto:dpedulla@fas.harvard.edu}{dpedulla@fas.harvard.edu} & \href{mailto:dschneider@hks.harvard.edu}{dschneider@hks.harvard.edu} & \href{mailto:akillewa@umich.edu}{akillewa@umich.edu} \\
+\end{tabular}}
 
 \end{document}

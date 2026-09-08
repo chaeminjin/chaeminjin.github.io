@@ -63,6 +63,14 @@ h1:first-of-type {
     padding-top: 10px;
 }
 
+.status {
+    font-size: 0.9em;
+    font-style: italic;
+    color: gray;
+    margin-left: 0.3em;
+    white-space: nowrap;
+}
+
 .award {
     font-size: 0.9em;
     color: gray;
