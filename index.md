@@ -26,7 +26,7 @@ Here's [my CV](Chae_CV.pdf).
 ## Working papers
 
 <ul class="publications">
-  <li>Chae, Minjin. "<a href="papers/Chae_JMP.pdf">When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment</a>." Under review.
+  <li>Chae, Minjin. "When Does Gender Trump Flexibility? Workplace Flexibility and Domestic Task Assignment." Under review.
     <ul class="award">
       <li>Finalist, Best Student Paper Award, Organization and Management Theory Division, Academy of Management, 2026</li>
     </ul>
@@ -36,7 +36,7 @@ Here's [my CV](Chae_CV.pdf).
 ## Work in progress
 
 <ul class="publications">
-  <li>Chae, Minjin. "<a href="papers/Chae_Schedule_Control.pdf">Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control</a>."</li>
+  <li>Chae, Minjin. "Worker Power and Temporal Rents: How Occupational Closure and Productivity Constraints Shape Schedule Control." <span class="status">Draft available upon request</span></li>
   <li>Cha, Youngjoo, Kaitlin Johnson, and Minjin Chae. "It's the Hours, Not the Job: Temporal Flexibility and the Gender Wage Gap Within Occupations." <span class="status">Draft available upon request</span></li>
   <li>Chae, Minjin. "Activating Inequality: Task Segregation and the Racial and Gender Divide in Remote Work." <span class="status">Draft available upon request</span></li>
   <li>Chae, Minjin. "When Do Firms Reduce or Reproduce Gender Inequality? Organizational Contexts of the Pandemic Work From Home and KiF&ouml;G Childcare Expansions." <span class="status">Data analysis</span>
